@@ -1,0 +1,13 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "name": "Debug node-project",
+      "request": "attach",
+      "address": "127.0.0.1",
+      "localRoot": "/Users/alexeiaccio/Leftover/node-project",
+      "remoteRoot": "/app",
+      "restart": true
+    }
+  ]
+}

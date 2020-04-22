@@ -7,16 +7,26 @@ const meow = require('meow');
 
 const ui = importJsx('./ui');
 
-const cli = meow(`
+const cli = meow(
+  `
 	Usage
 	  $ cli
 
 	Options
-		--name  Your name
+		--name or -n Your name
 
 	Examples
 	  $ cli --name=Jane
 	  Hello, Jane
-`);
+`,
+  {
+    flags: {
+      name: {
+        type: 'string',
+        alias: 'n'
+      }
+    }
+  }
+);
 
 render(React.createElement(ui, cli.flags));

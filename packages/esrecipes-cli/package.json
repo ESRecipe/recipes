@@ -1,24 +1,33 @@
 {
 	"name": "@esrecipes/cli",
-	"version": "0.0.0",
+	"version": "0.1.0",
+  "repository": "https://github.com/ESRecipes/recipes.git",
+  "author": "Aleksey Tukachev <atukachev@spbtv.com>",
 	"license": "MIT",
 	"bin": "cli.js",
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo --fix && ava"
 	},
 	"files": [
 		"cli.js",
 		"ui.js"
 	],
 	"dependencies": {
+		"@mdx-js/mdx": "^1.5.8",
+		"@mdx-js/react": "^1.5.8",
+		"@mdx-js/runtime": "^1.5.8",
 		"import-jsx": "^4.0.0",
 		"ink": "^2.7.1",
 		"meow": "^6.1.0",
 		"prop-types": "^15.7.2",
-		"react": "^16.13.1"
+		"react": "^16.13.1",
+		"remark-mdx": "^1.5.8",
+		"remark-parse": "^8.0.1",
+		"remark-stringify": "^8.0.0",
+		"unified": "^9.0.0"
 	},
 	"devDependencies": {
 		"@babel/preset-react": "^7.9.4",
@@ -42,7 +51,8 @@
 		]
 	},
 	"xo": {
-		"extends": "xo-react"
+		"extends": "xo-react",
+		"space": true
 	},
-  "private": false
+	"private": false
 }

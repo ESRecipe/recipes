@@ -1,10 +1,9 @@
 {
-  "name": "esrecipes-monorepo",
+  "name": "esrecipes",
   "version": "0.1.0",
-  "main": "index.js",
   "repository": "https://github.com/ESRecipes/recipes.git",
   "author": "Aleksey Tukachev <atukachev@spbtv.com>",
+  "main": "index.js",
   "license": "MIT",
-  "private": true,
-  "workspaces": ["packages/*"]
+	"private": false
 }
